@@ -25,6 +25,6 @@ jobs:
             cd /home/ubuntu/CICD
             touch working.txt
             git pull
-            npm install
+            npm i
             pm2 restart app
           EOF
