@@ -26,5 +26,5 @@ jobs:
             touch working.txt
             git pull
             npm install
-            pm2 restart app.js
+            pm2 restart app
           EOF
