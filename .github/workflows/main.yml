@@ -37,5 +37,5 @@ jobs:
             sudo npm install
 
             # Restart or start the app using PM2
-            pm2 restart app || pm2 start app.js --name app
+            pm2 start app.js --name app
           EOF
