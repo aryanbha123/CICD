@@ -21,9 +21,6 @@ jobs:
       - name: Deploy to EC2
         run: |
           ssh -o StrictHostKeyChecking=no ubuntu@ec2-13-201-78-78.ap-south-1.compute.amazonaws.com << 'EOF'
-            cd /home/ubuntu
+            cd /home/ubuntu/
             sudo touch 1.txt
-            git pull origin main
-            npm install
-            pm2 restart app
           EOF
