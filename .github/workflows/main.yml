@@ -22,6 +22,7 @@ jobs:
         run: |
           ssh -o StrictHostKeyChecking=no ubuntu@ec2-13-201-78-78.ap-south-1.compute.amazonaws.com << 'EOF'
             cd /home/ubuntu/CICD
+            touch working.txt
             git pull
             npm install
             pm2 restart app.js
