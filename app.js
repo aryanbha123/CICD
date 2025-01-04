@@ -1,4 +1,5 @@
-const express = require('express'); const mongoose = require('mongoose');
+const express = require('express');
+const mongoose = require('mongoose');
 
 
 mongoose.connect('mongodb://myUser:myPassword@localhost:27017/?authSource=admin')
